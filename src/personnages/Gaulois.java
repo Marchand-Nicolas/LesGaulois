@@ -26,4 +26,6 @@ public class Gaulois {
 		Gaulois asterix = new Gaulois("Asterix", 8);
 		asterix.parler("Salut!");
 	}
+
+	// TODO: Ajouter ToString()
 }
