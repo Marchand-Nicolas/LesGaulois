@@ -27,4 +27,6 @@ public class Romain {
 		Romain jules = new Romain("Jules", 10);
 		jules.parler("Bonjour!");
 	}
+
+	// TODO: Ajouter ToString()
 }
