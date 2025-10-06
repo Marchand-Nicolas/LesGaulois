@@ -17,7 +17,6 @@ public class Romain {
 	private int nbEquipement = 0;
 
 	public Romain(String nom, int force) {
-		super();
 		this.nom = nom;
 		this.force = force;
 		assert isInvariantVerified();

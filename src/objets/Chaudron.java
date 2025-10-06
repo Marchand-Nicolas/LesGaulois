@@ -17,13 +17,9 @@ public class Chaudron {
 		if (quantitePotion == 0) {
 			forcePotion = 0;
 		} else {
-			quantitePotion -= 1;
+			quantitePotion--;
 		}
 		return forcePotion;
-	}
-
-	public Chaudron() {
-		super();
 	}
 
 }
