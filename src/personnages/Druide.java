@@ -27,7 +27,7 @@ public class Druide {
 		parler("J'ai concocté " + quantite + " doses de potion magique. Elle a une force de " + forcePotion + ".");
 	}
 
-	public void boosterGaulois(Gaulois gaulois) {
+	public void booster(Gaulois gaulois) {
 		boolean contientPotion = chaudron.resterPotion();
 		String nomGaulois = gaulois.getNom();
 		if (contientPotion) {

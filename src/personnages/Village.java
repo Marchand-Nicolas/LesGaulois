@@ -2,17 +2,17 @@ package personnages;
 
 public class Village {
 	private String nom;
-	private int nbVillageois = 0;
 	private Gaulois chef;
-	private int NB_VILLAGEOIS_MAX;
+	private int nbVillageoisMax;
 	private Gaulois[] villageois;
+	private int nbVillageois = 0;
 
-	public Village(String nom, Gaulois chef, int max_villageois) {
+	public Village(String nom, Gaulois chef, int maxVillageois) {
 		this.nom = nom;
 		this.chef = chef;
 		chef.setVillage(this);
-		this.NB_VILLAGEOIS_MAX = max_villageois;
-		villageois = new Gaulois[NB_VILLAGEOIS_MAX];
+		this.nbVillageoisMax = maxVillageois;
+		villageois = new Gaulois[nbVillageoisMax];
 	}
 
 	public String getNom() {
@@ -24,7 +24,7 @@ public class Village {
 	}
 
 	public void ajouterVillageois(Gaulois gaulois) {
-		if (nbVillageois >= NB_VILLAGEOIS_MAX) {
+		if (nbVillageois >= nbVillageoisMax) {
 			System.out.println("Max d'habitants atteint!");
 		}
 		villageois[nbVillageois] = gaulois;
